@@ -40,7 +40,7 @@ public class PlinkoSlotTrigger : MonoBehaviour
 
     // Center anchor → edge anchor, snapped to clean numbers in log-space
     static readonly float[] AestheticMults =
-        { 0f, 1f, 2f, 3f, 5f, 10f, 20f, 25f, 50f, 75f, 100f, 150f, 200f, 300f, 500f };
+        { 1f, 2f, 3f, 5f, 10f, 20f, 25f, 50f };
 
     public void Init(int index, int total)
     {
@@ -58,16 +58,30 @@ public class PlinkoSlotTrigger : MonoBehaviour
             label.text = _mult < 1f ? $"{_mult}x" : $"{Mathf.RoundToInt(_mult)}x";
     }
 
+    static readonly float[] FixedPrefix = { 0f, 0f, 1f, 2f };
+
     static float SnappedMultiplier(int slotIndex, int totalSlots)
     {
-        float center = (totalSlots - 1) * 0.5f;
-        float t = center > 0f ? Mathf.Abs(slotIndex - center) / center : 0f;
-        if (t == 0f) return 0f;
-        float raw = 0.25f * Mathf.Pow(2000f, t);
+        float center    = (totalSlots - 1) * 0.5f;
+        int   distIndex = Mathf.RoundToInt(Mathf.Abs(slotIndex - center));
+        int   maxDist   = Mathf.RoundToInt(center);
+
+        if (distIndex >= maxDist)               return 50f;
+        if (distIndex < FixedPrefix.Length)     return FixedPrefix[distIndex];
+
+        // Harsh ease-in ramp from 5x → 50x across remaining slots before the edge
+        int   rampStart = FixedPrefix.Length;           // 4
+        int   rampCount = maxDist - rampStart;
+        if (rampCount <= 0) return 50f;
+
+        // Normalised position [0..1] through the ramp, then power-curved for harsh ease-in
+        float t      = (float)(distIndex - rampStart + 1) / (rampCount + 1);
+        float curved = Mathf.Pow(t, 2.5f);             // harsh ease-in
+        float raw    = 5f * Mathf.Pow(10f, curved);    // 5x → 50x  (10^0=1, 10^1=10, ×5)
 
         float logRaw = Mathf.Log(raw);
-        float best = AestheticMults[0];
-        float bestD = float.MaxValue;
+        float best   = AestheticMults[0];
+        float bestD  = float.MaxValue;
         foreach (float v in AestheticMults)
         {
             float d = Mathf.Abs(logRaw - Mathf.Log(v));
@@ -79,14 +93,15 @@ public class PlinkoSlotTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-
-        // Disable the collider immediately so adjacent buckets can't also fire
-        other.enabled = false;
+        var wobble = other.GetComponent<PlinkoBallAirwobble>();
+        if (wobble == null || wobble.claimed) return;
+        wobble.claimed = true;
 
         PlinkoAnalytics.Instance?.Record(slotIndex);
         PlinkoGameManager.Instance?.NotifySlotHit(slotIndex, totalSlots);
         PlinkoGameManager.Instance?.UnregisterBall(other.gameObject);
-        PlinkoGameManager.Instance?.AddCredits(Mathf.RoundToInt(_mult));
+        int bet = PlinkoGameManager.Instance?.BetAmount ?? 1;
+        PlinkoGameManager.Instance?.AddCredits(Mathf.RoundToInt(_mult * bet));
 
         if (landClip != null)
         {
@@ -101,7 +116,7 @@ public class PlinkoSlotTrigger : MonoBehaviour
                 float capturedMult = _mult;
                 s_activeMults.Add(capturedMult);
 
-                float t = Mathf.InverseLerp(Mathf.Log(0.25f), Mathf.Log(500f), Mathf.Log(_mult));
+                float t = Mathf.InverseLerp(Mathf.Log(0.25f), Mathf.Log(50f), Mathf.Log(_mult));
                 _audio.pitch = Mathf.Lerp(pitchMin, pitchMax, t);
                 _audio.PlayOneShot(landClip, volume / s_activeMults.Count);
                 StartCoroutine(DecrementAfterClip(landClip.length / _audio.pitch, capturedMult));

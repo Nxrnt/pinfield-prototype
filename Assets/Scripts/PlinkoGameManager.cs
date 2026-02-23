@@ -21,7 +21,9 @@ public class PlinkoGameManager : MonoBehaviour
 
     [Header("Credits")]
     [SerializeField] private int _startingCredits = 100;
+    [SerializeField] private int _betAmount = 1;
     [SerializeField] private TMP_Text creditLabel;
+    [SerializeField] private TMP_InputField betInputField;
 
     [Header("References")]
     [SerializeField] private BallSpawner ballSpawner;
@@ -29,6 +31,7 @@ public class PlinkoGameManager : MonoBehaviour
 
     // Live-readable by ball components
     public int BallsAtOnce => _ballsAtOnce;
+    public int BetAmount   => _betAmount;
     public float CenterBias => _centerBias;
     public float XDamping => _xDamping;
     public int BoardRows => _boardRows;
@@ -55,6 +58,12 @@ public class PlinkoGameManager : MonoBehaviour
             ? PlayerPrefs.GetInt(kCreditsKey)
             : _startingCredits;
         RefreshCreditLabel();
+
+        if (betInputField != null)
+        {
+            betInputField.text = _betAmount.ToString();
+            betInputField.onEndEdit.AddListener(SetBetAmount);
+        }
     }
 
     void Update()
@@ -69,9 +78,9 @@ public class PlinkoGameManager : MonoBehaviour
     {
         for (int i = 0; i < _ballsAtOnce; i++)
         {
-            if (_credits <= 0) break;
+            if (_credits < _betAmount) break;
             if (_activeBalls.Count >= _maxBallsOnField) break;
-            _credits--;
+            _credits -= _betAmount;
             SaveCredits();
             RefreshCreditLabel();
             ballSpawner?.SpawnOne();
@@ -98,6 +107,7 @@ public class PlinkoGameManager : MonoBehaviour
 
     void SaveCredits() => PlayerPrefs.SetInt(kCreditsKey, _credits);
 
+    [ContextMenu("Reset Save Data")]
     public void ResetSave()
     {
         PlayerPrefs.DeleteKey(kCreditsKey);
@@ -105,10 +115,19 @@ public class PlinkoGameManager : MonoBehaviour
         RefreshCreditLabel();
     }
 
+    static string FormatCredits(int amount)
+    {
+        if (amount >= 1_000_000_000_000) return $"{amount / 1_000_000_000_000.0:0.00}t";
+        if (amount >= 1_000_000_000)     return $"{amount / 1_000_000_000.0:0.00}b";
+        if (amount >= 1_000_000)         return $"{amount / 1_000_000.0:0.00}m";
+        if (amount >= 10_000)            return $"{amount / 1_000.0:0.00}k";
+        return amount.ToString();
+    }
+
     void RefreshCreditLabel()
     {
         if (creditLabel != null)
-            creditLabel.text = $"{_credits} credits";
+            creditLabel.text = $"{FormatCredits(_credits)} credits";
     }
 
     // Called by BallSpawner so GameManager can track active balls
@@ -128,6 +147,33 @@ public class PlinkoGameManager : MonoBehaviour
     {
         float t = 1f - Mathf.Abs((index / (float)(totalSlots - 1)) * 2f - 1f);
         return Color.Lerp(ColorEdge, ColorCenter, Mathf.Pow(t, 0.4f));
+    }
+
+    void SetBetAmount(string value)
+    {
+        if (int.TryParse(value, out int parsed))
+            _betAmount = Mathf.Max(1, parsed);
+        // Normalise the field to show the clamped value
+        if (betInputField != null)
+            betInputField.text = _betAmount.ToString();
+    }
+
+    public void BetAllIn()
+    {
+        _betAmount = Mathf.Max(1, _credits);
+        if (betInputField != null) betInputField.text = _betAmount.ToString();
+    }
+
+    public void BetHalf()
+    {
+        _betAmount = Mathf.Max(1, _betAmount / 2);
+        if (betInputField != null) betInputField.text = _betAmount.ToString();
+    }
+
+    public void BetDouble()
+    {
+        _betAmount = Mathf.Max(1, _betAmount * 2);
+        if (betInputField != null) betInputField.text = _betAmount.ToString();
     }
 
     // --- Called by PlinkoUIController sliders ---

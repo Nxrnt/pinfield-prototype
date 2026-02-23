@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 6a39e86ecdea3ef4588a3586682258ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2416949821627338308
+    second: pinfiel_0
+  - first:
+      213: 4088068750189964471
+    second: pinfiel_1
+  - first:
+      213: 7950936018623751256
+    second: pinfiel_2
+  - first:
+      213: 4639482994057368693
+    second: pinfiel_3
+  - first:
+      213: 249356425538704054
+    second: pinfiel_4
+  - first:
+      213: 3289353547604713789
+    second: pinfiel_5
+  - first:
+      213: 1426701832790598571
+    second: pinfiel_6
+  - first:
+      213: -4050804255336759821
+    second: pinfiel_7
+  - first:
+      213: -4787689766254429235
+    second: pinfiel_8
+  - first:
+      213: -2403377477968154258
+    second: pinfiel_9
+  - first:
+      213: 780841176602649822
+    second: pinfiel_10
+  - first:
+      213: 1055976524201594192
+    second: pinfiel_11
+  - first:
+      213: 6793012365940805864
+    second: pinfiel_12
+  - first:
+      213: -5113475300384989525
+    second: pinfiel_13
+  - first:
+      213: -4073219473204146978
+    second: pinfiel_14
+  - first:
+      213: 7098841922258791935
+    second: pinfiel_15
+  - first:
+      213: -7482188322177060899
+    second: pinfiel_16
+  - first:
+      213: -181787021229231164
+    second: pinfiel_17
+  - first:
+      213: -182428517117435841
+    second: pinfiel_18
+  - first:
+      213: 6720721089835073520
+    second: pinfiel_19
+  - first:
+      213: -6838103496564766430
+    second: pinfiel_20
+  - first:
+      213: 4401557920396023041
+    second: pinfiel_21
+  - first:
+      213: 5698674205514753889
+    second: pinfiel_22
+  - first:
+      213: -1417507602273514809
+    second: pinfiel_23
+  - first:
+      213: 2503006608539938783
+    second: pinfiel_24
+  - first:
+      213: 7041402343817099084
+    second: pinfiel_25
+  - first:
+      213: -7233028361836691559
+    second: pinfiel_26
+  - first:
+      213: 6705333217237581357
+    second: pinfiel_27
+  - first:
+      213: 5266512162603460376
+    second: pinfiel_28
+  - first:
+      213: 2483565246113004946
+    second: pinfiel_29
+  - first:
+      213: -6849072680934993042
+    second: pinfiel_30
+  - first:
+      213: 1493633862188453796
+    second: pinfiel_31
+  - first:
+      213: -1189991084453961646
+    second: pinfiel_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pinfiel_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1526
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e8a06ae0bba8120800000000000000
+      internalID: 2416949821627338308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 675
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bca2786edcbbb830800000000000000
+      internalID: 4088068750189964471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 673
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8546dedde26675e60800000000000000
+      internalID: 7950936018623751256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_3
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 639
+        width: 133
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574514ab331c26040800000000000000
+      internalID: 4639482994057368693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_4
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 657
+        width: 48
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b212be0954e57300800000000000000
+      internalID: 249356425538704054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_5
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 664
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3166a1bf9126ad20800000000000000
+      internalID: 3289353547604713789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_6
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 659
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3e1e702c9acc310800000000000000
+      internalID: 1426701832790598571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_7
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 599
+        width: 137
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdf20aedf6a8c7c0800000000000000
+      internalID: -4050804255336759821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_8
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 635
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbb1ab1685be8db0800000000000000
+      internalID: -4787689766254429235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_9
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 368
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61b88cdaec75aed0800000000000000
+      internalID: -2403377477968154258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_10
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 370
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4266db9ea16da00800000000000000
+      internalID: 780841176602649822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_11
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 368
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d0030dd0597ae00800000000000000
+      internalID: 1055976524201594192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 368
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0dcb281c0a54e50800000000000000
+      internalID: 6793012365940805864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_13
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 360
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae91d08e494909b0800000000000000
+      internalID: -5113475300384989525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_14
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 368
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc867f48740977c0800000000000000
+      internalID: -4073219473204146978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_15
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 370
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffde2e4fd17248260800000000000000
+      internalID: 7098841922258791935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_16
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 363
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf6f020d5de92890800000000000000
+      internalID: -7482188322177060899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_17
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 363
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3fad6daa92a7df0800000000000000
+      internalID: -181787021229231164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_18
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 349
+        width: 289
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f306050fa32e77df0800000000000000
+      internalID: -182428517117435841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_19
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 360
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff781a293cc44d50800000000000000
+      internalID: 6720721089835073520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_20
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 355
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22986e5891d2a11a0800000000000000
+      internalID: -6838103496564766430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_21
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 354
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105138fab99751d30800000000000000
+      internalID: 4401557920396023041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_22
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 363
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167636e3ff1c51f40800000000000000
+      internalID: 5698674205514753889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_23
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 359
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca42149850045ce0800000000000000
+      internalID: -1417507602273514809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_24
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 362
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf6a7cbf377cb220800000000000000
+      internalID: 2503006608539938783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_25
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 359
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4732dfef1618b160800000000000000
+      internalID: 7041402343817099084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_26
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 363
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ff562f60f1f9b90800000000000000
+      internalID: -7233028361836691559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_27
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 362
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2eb212e8012e0d50800000000000000
+      internalID: 6705333217237581357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_28
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 370
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817e041a8e8661940800000000000000
+      internalID: 5266512162603460376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_29
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 362
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d321fce65677220800000000000000
+      internalID: 2483565246113004946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_30
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 354
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6399044fa433f0a0800000000000000
+      internalID: -6849072680934993042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_31
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 362
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afcc3485147ab410800000000000000
+      internalID: 1493633862188453796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinfiel_32
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 353
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2506d3dd96d4c7fe0800000000000000
+      internalID: -1189991084453961646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pinfiel_0: 2416949821627338308
+      pinfiel_1: 4088068750189964471
+      pinfiel_10: 780841176602649822
+      pinfiel_11: 1055976524201594192
+      pinfiel_12: 6793012365940805864
+      pinfiel_13: -5113475300384989525
+      pinfiel_14: -4073219473204146978
+      pinfiel_15: 7098841922258791935
+      pinfiel_16: -7482188322177060899
+      pinfiel_17: -181787021229231164
+      pinfiel_18: -182428517117435841
+      pinfiel_19: 6720721089835073520
+      pinfiel_2: 7950936018623751256
+      pinfiel_20: -6838103496564766430
+      pinfiel_21: 4401557920396023041
+      pinfiel_22: 5698674205514753889
+      pinfiel_23: -1417507602273514809
+      pinfiel_24: 2503006608539938783
+      pinfiel_25: 7041402343817099084
+      pinfiel_26: -7233028361836691559
+      pinfiel_27: 6705333217237581357
+      pinfiel_28: 5266512162603460376
+      pinfiel_29: 2483565246113004946
+      pinfiel_3: 4639482994057368693
+      pinfiel_30: -6849072680934993042
+      pinfiel_31: 1493633862188453796
+      pinfiel_32: -1189991084453961646
+      pinfiel_4: 249356425538704054
+      pinfiel_5: 3289353547604713789
+      pinfiel_6: 1426701832790598571
+      pinfiel_7: -4050804255336759821
+      pinfiel_8: -4787689766254429235
+      pinfiel_9: -2403377477968154258
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

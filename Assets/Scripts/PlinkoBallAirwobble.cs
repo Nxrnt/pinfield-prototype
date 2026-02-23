@@ -11,6 +11,7 @@ public class PlinkoBallAirwobble : MonoBehaviour
 
     Rigidbody2D rb;
     float        tOffset;
+    [HideInInspector] public bool claimed;
 
     void Awake()
     {

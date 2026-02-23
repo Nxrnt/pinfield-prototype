@@ -49,6 +49,8 @@ public class BallSpawner : MonoBehaviour
         }
         if (go.TryGetComponent<Collider2D>(out var col))
             col.enabled = true;
+        if (go.TryGetComponent<PlinkoBallAirwobble>(out var wobble))
+            wobble.claimed = false;
     }
 
     IEnumerator AutoSpawnLoop()
