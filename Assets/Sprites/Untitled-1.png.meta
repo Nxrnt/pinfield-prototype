@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0904f84c55588154397b2150a5cb52df
+guid: 6a334853df1a80243b146c07be856dc1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7463746266037933961
-    second: Plinko-Game-in-Action_0
+      213: 9182157284707403512
+    second: Untitled-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plinko-Game-in-Action_0
+      name: Untitled-1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1078
-        height: 679
+        x: 8
+        y: 7
+        width: 559
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 778292fc0527b6890800000000000000
-      internalID: -7463746266037933961
+      spriteID: 8f600cab6639d6f70800000000000000
+      internalID: 9182157284707403512
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plinko-Game-in-Action_0: -7463746266037933961
+      Untitled-1_0: 9182157284707403512
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

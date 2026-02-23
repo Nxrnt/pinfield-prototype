@@ -38,7 +38,7 @@ public class PlinkoAnalytics : MonoBehaviour
         if (kb.pKey.wasPressedThisFrame) PrintReport();
     }
 
-    void ResetCounts()
+    public void ResetCounts()
     {
         Array.Clear(counts, 0, counts.Length);
         total = 0;
