@@ -39,6 +39,9 @@ public class PlinkoGameManager : MonoBehaviour
     // Fired when any ball lands: (slotIndex, slotColor)
     public static event Action<int, Color> OnSlotHit;
 
+    // Fired when credits or bet amount changes
+    public static event Action OnBetOrCreditsChanged;
+
     // Gradient: edges are red, center is yellow — matches the Python gradient
     static readonly Color ColorEdge = new Color(1f, 0.004f, 0f);
     static readonly Color ColorCenter = new Color(1f, 0.850f, 0f);
@@ -128,6 +131,7 @@ public class PlinkoGameManager : MonoBehaviour
     {
         if (creditLabel != null)
             creditLabel.text = $"{FormatCredits(_credits)} credits";
+        OnBetOrCreditsChanged?.Invoke();
     }
 
     // Called by BallSpawner so GameManager can track active balls
@@ -153,27 +157,30 @@ public class PlinkoGameManager : MonoBehaviour
     {
         if (int.TryParse(value, out int parsed))
             _betAmount = Mathf.Max(1, parsed);
-        // Normalise the field to show the clamped value
         if (betInputField != null)
             betInputField.text = _betAmount.ToString();
+        OnBetOrCreditsChanged?.Invoke();
     }
 
     public void BetAllIn()
     {
         _betAmount = Mathf.Max(1, _credits);
         if (betInputField != null) betInputField.text = _betAmount.ToString();
+        OnBetOrCreditsChanged?.Invoke();
     }
 
     public void BetHalf()
     {
         _betAmount = Mathf.Max(1, _betAmount / 2);
         if (betInputField != null) betInputField.text = _betAmount.ToString();
+        OnBetOrCreditsChanged?.Invoke();
     }
 
     public void BetDouble()
     {
         _betAmount = Mathf.Max(1, _betAmount * 2);
         if (betInputField != null) betInputField.text = _betAmount.ToString();
+        OnBetOrCreditsChanged?.Invoke();
     }
 
     // --- Called by PlinkoUIController sliders ---

@@ -13,25 +13,28 @@ public class PlinkoUIController : MonoBehaviour
 
     void Start()
     {
-        if (dropButton     != null) dropButton.onClick.AddListener(OnDrop);
-        if (resetButton    != null) resetButton.onClick.AddListener(OnReset);
-        if (allInButton    != null) allInButton.onClick.AddListener(() => PlinkoGameManager.Instance?.BetAllIn());
-        if (halfBetButton  != null) halfBetButton.onClick.AddListener(() => PlinkoGameManager.Instance?.BetHalf());
-        if (doubleBetButton!= null) doubleBetButton.onClick.AddListener(() => PlinkoGameManager.Instance?.BetDouble());
+        if (dropButton      != null) dropButton.onClick.AddListener(OnDrop);
+        if (resetButton     != null) resetButton.onClick.AddListener(OnReset);
+        if (allInButton     != null) allInButton.onClick.AddListener(() => PlinkoGameManager.Instance?.BetAllIn());
+        if (halfBetButton   != null) halfBetButton.onClick.AddListener(() => PlinkoGameManager.Instance?.BetHalf());
+        if (doubleBetButton != null) doubleBetButton.onClick.AddListener(() => PlinkoGameManager.Instance?.BetDouble());
+
+        PlinkoGameManager.OnBetOrCreditsChanged += RefreshDoubleButton;
+        RefreshDoubleButton();
     }
 
-    // Push current GameManager values into slider positions on start
-    void SyncFromManager()
+    void OnDestroy()
     {
-        var gm = PlinkoGameManager.Instance;
-        if (gm == null) return;
+        PlinkoGameManager.OnBetOrCreditsChanged -= RefreshDoubleButton;
     }
 
-    void Update()
+    void RefreshDoubleButton()
     {
-        if (doubleBetButton == null) return;
         var gm = PlinkoGameManager.Instance;
-        doubleBetButton.interactable = gm != null && gm.BetAmount * 2 <= gm.Credits;
+        if (doubleBetButton != null)
+            doubleBetButton.interactable = gm != null && gm.BetAmount * 2 <= gm.Credits;
+        if (allInButton != null)
+            allInButton.interactable = gm != null && gm.Credits > 0;
     }
 
     void OnDrop() => PlinkoGameManager.Instance?.DropBalls();
